@@ -1,0 +1,35 @@
+<div class="main">
+Programme:
+<input type="text" value="MCA" readonly [disabled]="true"/>
+<br>
+Semester:
+<input type="text" value="3" readonly [disabled]="true"/>
+<br>
+Roll No:
+<input type="text" value="1" readonly [disabled]="true"/>
+<br>
+<div>
+    M1 :
+    <input type="number" placeholder="Enter the Mark1" id="mark1" name="mark1" [(ngModel)]="mark1"/>
+    <br>
+    
+    M2 :
+    <input type="number" placeholder="Enter the Mark2" id="mark2" name="mark2" [(ngModel)]="mark2"/>
+    <br>
+    
+    M3 :
+    <input type="number" placeholder="Enter the Mark3" id="mark3" name="mark3" [(ngModel)]="mark3" />
+    <br>
+    
+    M4 :
+    <input type="number" placeholder="Enter the Mark4" id="mark4" name="mark4" [(ngModel)]="mark4"/>
+    <br>
+    
+    Total :
+    <input type="number" placeholder="Total" [(ngModel)]="total"/>
+    <br>
+    
+    <button (click)="onClick(mark1,mark2,mark3,mark4)">Submit</button>
+    
+</div>
+</div>
